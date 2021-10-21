@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="Content/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="Content/scrolling-nav.css" rel="stylesheet">
+    <link href="Content/Site.css" rel="stylesheet" />
+    <title>Daves Website on GitHub Pages</title>
+</head>
+<body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">GitHub Pages</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        GitHub Pages on GitHub.com
+                        https://quickbasic22.github.io/DavesWebsite/firstpage.html
+                        https://quickbasic22.github.io/DavesWebsite/simple.txt
+                        https://quickbasic22.github.io/DavesWebsite/site.html
+                        https://quickbasic22.github.io/DavesWebsite/index.html
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#pagetop">Page top</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#pagebottom">Page bottom</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-primary text-white">
+        <div class="container text-center">
+            <a id="pagetop">Page top</a>
+                <p>Demonstrate fadeToggle() with different speed parameters.</p>
+
+                <button>Click to fade in/out boxes</button><br><br>
+
+                <div id="div1" style="width:80px;height:80px;background-color:red;"></div>
+                <br>
+                <div id="div2" style="width:80px;height:80px;background-color:green;"></div>
+                <br>
+                <div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+
+        </div>
+    </header>
+   
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Introducing GitHub Pages</h2>
+                    <p>GitHub Pages is good place for static webpages with free account</p>
+
+                </div>
+            </div>
+        </div>
+   
+    <section id="services" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div id="flip">Click to slide the panel down or up</div>
+                    <div id="panel">Hello Microsoft Azure!</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div id="flip2">Click to slide the panel down or up</div>
+                    <div id="panel2">Hello GitHub Pages!</div>
+                </div>
+            </div>
+        </div>
+        <a id="pagebottom">Page bottom</a>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+
+    <script src="Scripts/scrolling-nav.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("p").on({
+                mouseenter: function () {
+                    $(this).css("background-color", "lightgray");
+                },
+                mouseleave: function () {
+                    $(this).css("background-color", "lightblue");
+                },
+                click: function () {
+                    $(this).css("background-color", "yellow");
+                }
+            });
+            $("button").click(function () {
+                $("#div1").fadeToggle();
+                $("#div2").fadeToggle("slow");
+                $("#div3").fadeToggle(3000);
+            });
+            $("#flip").click(function () {
+                $("#panel").slideToggle("slow");
+            });
+            $("#flip2").click(function () {
+                $("#panel2").slideToggle("slow");
+            });
+        });
+    </script>
+</body>
+</html>
+
